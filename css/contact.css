@@ -1,0 +1,204 @@
+*{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: #FAF9F6;
+    color: #262626;
+}
+body.dark-mode{
+    background-color: #121212;
+    color:#d1d1d1;
+}
+body.dark-mode .navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 15px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body.dark-mode li a.link-b{
+    color: #d1d1d1;
+    margin-right: 150px;
+    transition: color 0.2s ease 0.05s;
+}
+body.dark-mode li a.link-b:hover{
+    color: #2b2b2b;
+}
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 15px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.pagetitle{
+    padding-bottom: 60px;
+}
+.pagetitle a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #d1d1d1;
+    transition: color 0.2s ease 0.05s;
+}
+.pagetitle a:hover {
+    color: #262626;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+li a.link-b {
+    color: #d1d1d1;
+    margin-right: 150px;
+    transition: color 0.2s ease 0.05s;
+}
+li a.link-b:hover {
+    color: #262626;
+}
+li.dropdown {
+    padding-bottom: 25px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    margin-top: -10px;
+}
+
+.dark-mode .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6e6e6e;
+    max-width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    margin-top: -10px;
+}
+.dropdown-content li {
+    display: block;
+    padding: 0;
+}
+.dropdown-content a {
+    color: #d1d1d1;
+    padding: 18px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dark-mode .dropdown-content a {
+    color: #9b9b9b;
+    padding: 18px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #262626;
+}
+.dark-mode .dropdown-content a:hover {
+    background-color: #535353;
+    color: #d1d1d1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.footercontainer{
+    color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF9F6;
+    color: #2b2b2b;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    animation: fadePreloader 1.3s ease-in forwards;
+}
+.dark-mode #preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    color: #d1d1d1;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    animation: fadePreloader 1.3s ease-in forwards;
+}
+.custom-cursor{
+    cursor: url(../cursor1.png), auto;
+}
+@keyframes fadePreloader {
+    0% { opacity: 1; }
+    65% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+.content{
+    padding: 200px 450px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex: 1;
+}
+.blockwordsdiv a{
+    flex: 1;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 70px;
+    font-style: italic;
+    color: #d1d1d1;
+    transition: color 0.2s ease 0.05s;
+}
+.blockwordsdiv:hover a{
+    color: #262626;
+}
